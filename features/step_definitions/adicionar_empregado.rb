@@ -32,5 +32,6 @@ Entao(/^o usuario adicionara um empregado$/) do
   select 'Australian', from: 'personal_cmbNation'
   sleep 3
   page.find(:id, "btnSave").click
+
   expect(page).to have_content  'Successfully Saved'
  end
